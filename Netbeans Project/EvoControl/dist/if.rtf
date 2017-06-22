@@ -1,0 +1,27 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 if(input.contains("GET")) \{ //HTTP GET request\
+                          System.out.println("Got GET request");\
+                          out.println("HTTP/1.1 200 OK");\
+                          out.println("Server: Evo v1.0");\
+                          out.println();\
+                          out.println("GET 200 OK");\
+                      \}\
+                      if(input.contains("POST"))\{ //HTTP POST request\
+                          System.out.println("Got POST request");\
+                          out.println("HTTP/1.1 200 OK");\
+                          out.println("Server: Evo v1.0");\
+                          out.println();\
+                          out.println("POST 200 OK");\
+                          \
+                      \}\
+                      if(input.contains("HEAD"))\{ //HTTP HEAD request\
+                          System.out.println("Got IGNORE (head) request");\
+                          out.println("HTTP/1.1 8192 FUCK HEAD REQUESTS");\
+                          out.println("get out of here");\
+                      \}}
